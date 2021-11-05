@@ -1,0 +1,104 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    user-select: none;
+}
+
+body {
+    background-color: #344955;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 4vh 2.5vw;
+}
+
+h1 {
+    font-size: 2.9rem;
+}
+
+.container {
+    width: 100vw;
+    margin: 12vh 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.container p {
+    font-size: 1.5em;
+}
+
+.select-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 3px solid white;
+    padding: 1rem;
+}
+
+.select-item:hover {
+    background-color: #f9aa33;
+    color: black;
+    border-color: black;
+    cursor: pointer;
+}
+
+.gameResult {
+    width: 90vw;
+    margin-top: 2vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #232F34;
+    font-size: 1.8em;
+    gap: 2vh;
+    padding: 2vh 0;
+}
+
+.gameResult .gameScore {
+    padding-top: 1vh;
+}
+
+.gameResult .finalResult {
+    padding-bottom: 1vh;
+}
+
+.scoreTable {
+    width: inherit;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 1vw;
+}
+
+.again-div {
+    margin-top: 8px;
+    border: 2px solid black;
+    height: 25px;
+    width: 100px;
+}
+
+.again-div:hover {
+    background-color: #f9aa33;
+    color:black;
+    border-color: black;
+}
+
+
+@media (max-width: 805px) {
+    .container {
+        flex-direction: column;
+        gap: 2vh;
+    }
+
+    .scoreTable {
+        flex-direction: column;
+        gap: 1vh;
+    }
+}
